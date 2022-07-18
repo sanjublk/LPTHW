@@ -15,6 +15,8 @@ def cat(path: str):
         for data in read_in_chunks(file):
             sys.stdout.write(data)
 
+def show(word):
+    print(word)
 
 if __name__ == "__main__":
     path = sys.argv[1]
