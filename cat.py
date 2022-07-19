@@ -15,7 +15,10 @@ def cat(path: str):
         for data in read_in_chunks(file):
             sys.stdout.write(data)
 
-
 if __name__ == "__main__":
-    path = sys.argv[1]
-    cat(path)
+    if len(sys.argv) < 1:
+        print("Error: No arguments provided")
+    else:
+        print(sys.argv)
+        for arg in sys.argv[1:]:
+            cat(arg)
