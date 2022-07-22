@@ -16,8 +16,9 @@ print("-----------------")
 print(poem)
 print("-----------------")
 
-five = 10 -2 + 3 -6
+five = 10 - 2 + 3 - 6
 print(f"this should be five: {five}")
+
 
 def secret_formula(started):
     jelly_beans = started * 500
